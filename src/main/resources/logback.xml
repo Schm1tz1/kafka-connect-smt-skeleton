@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2021-2023 Confluent, Inc.
+
+-->
+<configuration>
+	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<logger name="com.github.schm1tz1" level="INFO"/>
+	<root level="ERROR">
+		<appender-ref ref="consoleAppender"/>
+	</root>
+</configuration>
